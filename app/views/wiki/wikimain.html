@@ -20,11 +20,13 @@
 			<h1>{{node1.name?node1.name:"N/A"}}</h1>
 
 			<div class="content">
-				
-				
 			</div>
 		</div>
-
-		<%-include ../includes/commentModule/duoshuo.html %>
+		<!-- 多说评论框 start -->
+		<div class="ds-thread"
+			data-thread-key="wiki-{{node1.id}}"
+			data-title="wiki-{{node1.name}}"
+			data-url="http://www.xocean.ijser.cn"></div>
+		<!-- 多说评论框 end -->
 	</div>
 </div>

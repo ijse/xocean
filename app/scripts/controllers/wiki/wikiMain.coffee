@@ -89,6 +89,5 @@ angular.module('xoceanApp')
 
 
 
-	console.log $scope.treedata
 
 	return
