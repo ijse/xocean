@@ -4,6 +4,7 @@ angular.module('xoceanApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
+  'treeControl',
   'ngRoute'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
@@ -78,6 +79,14 @@ angular.module('xoceanApp', [
           }
         }
       })
+
+      // Wiki routes
+      .when('/wiki', {
+        templateUrl: 'wiki/wikimain.html',
+        controller: 'WikiMainCtrl',
+        authenticate: false
+      })
+
       .otherwise({
         redirectTo: '/'
       });

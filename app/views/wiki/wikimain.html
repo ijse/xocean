@@ -1,0 +1,30 @@
+
+<div class="row">
+	<div class="tree-border col-md-2">
+		<h3>部门WiKi</h3>
+
+		<treecontrol class="tree-classic"
+			options="treeOptions"
+			tree-model="treedata"
+			node-children="children"
+			on-selection="showSelected(node)"
+			selected-node="node1">
+
+			{{node.name}}
+		</treecontrol>
+	</div>
+
+	<div class="node-preview col-md-10">
+
+		<div class="well">
+			<h1>{{node1.name?node1.name:"N/A"}}</h1>
+
+			<div class="content">
+				
+				
+			</div>
+		</div>
+
+		<%-include ../includes/commentModule/duoshuo.html %>
+	</div>
+</div>
